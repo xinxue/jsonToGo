@@ -1,11 +1,11 @@
 import mysqlToGo from "@/services/mysql-to-go";
 import { onChange } from "@/models/helpers";
-import { ALL, YAML, DB, Config, Nested, JSON } from '@/services/js-options'
+import { ALL, YAML, DB, XORM,GORM,FORM,Config, Nested, JSON } from '@/services/js-options'
 
 const innerState = {
   treeData: [{
     ...ALL,
-    children: [JSON, YAML, DB],
+    children: [JSON, YAML,XORM,GORM, FORM,DB],
   }, {
     ...Config,
     children: [Nested],

@@ -1,11 +1,11 @@
 import jsonToGo from "@/services/json-to-go";
 import { onChange } from "@/models/helpers";
-import { ALL, JSON, DB, Config, Nested } from '@/services/js-options'
+import { ALL, JSON, DB, XORM,FORM,GORM, Config, Nested } from '@/services/js-options'
 
 const innerState = {
   treeData: [{
     ...ALL,
-    children: [JSON, DB],
+    children: [JSON, DB,XORM,GORM,FORM],
   }, {
     ...Config,
     children: [Nested],

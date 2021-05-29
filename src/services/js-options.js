@@ -21,6 +21,21 @@ const YAML = {
   value: 'yaml',
   key: 'yaml',
 };
+const XORM = {
+  title: 'xorm',
+  value: 'xorm',
+  key: 'xorm',
+};
+const GORM = {
+  title: 'gorm',
+  value: 'gorm',
+  key: 'gorm',
+};
+const FORM = {
+  title: 'form',
+  value: 'form',
+  key: 'form',
+};
 
 const Config = {
   title: 'config',
@@ -49,6 +64,15 @@ class Options {
     },
     yaml: {
       key: 'yaml'
+    },
+    xorm : {
+      key:"xorm"
+    },
+    gorm : {
+      key:"gorm"
+    },
+    form : {
+      key : "form"
     }
   };
 
@@ -66,4 +90,4 @@ class Options {
   }
 }
 
-export { ALL, JSON, DB, YAML, Options, Config, Nested, isNested };
+export { ALL, JSON, DB, XORM,GORM,FORM,YAML, Options, Config, Nested, isNested };

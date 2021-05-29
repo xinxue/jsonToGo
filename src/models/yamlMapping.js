@@ -1,11 +1,11 @@
 import { onChange } from "@/models/helpers";
 import yamlToGo from '@/services/yaml-to-go'
-import { ALL, YAML, DB, Config, Nested } from '@/services/js-options'
+import { ALL, YAML, DB,XORM,GORM,FORM, Config, Nested } from '@/services/js-options'
 
 const innerState = {
   treeData: [{
     ...ALL,
-    children: [YAML, DB],
+    children: [YAML, DB,XORM,GORM,FORM],
   }, {
     ...Config,
     children: [Nested],
